@@ -19,6 +19,6 @@ from django.urls import path,include
 
 urlpatterns = [
     # homepage
-    path('', include('calc.urls')),
+    path('', include('travel.urls')),
     path('admin/', admin.site.urls),
 ]
