@@ -33,7 +33,6 @@ def index(request):
 
     #  create one object
      destinations = [destination1,destination2, destination3,destination4]
-     
 
      return render(request, 'index.html',{ 'destinations': destinations })
 
