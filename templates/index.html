@@ -254,9 +254,17 @@
                               <h3>Tuscany</h3>
                               <span><img src="{% static 'images/loca.png' %}" alt="#"/> {{ destination.name }}</span>
                            </div>
+
+                           
                            <div class="italy_right">
                               <h3>Price</h3>
-                              <span>{{ destination.price }}</span>
+                              <span>{{ destination.price }} </span>
+
+                              {% comment %} check for offer  {% endcomment %}
+                              {% if destination.offer  %}
+                              <span>Offer </span>
+                              {% endif %}
+
                            </div>
                         </div>
                         <p>{{ destination.description }}</p>
